@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/contactus.css">
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <a href="/" class="logo">
             <img src="/images/logos/logo-blue-white.jpg" alt="LiftUp">
             <h1 class="heading">LiftUp</h1>
@@ -17,18 +17,29 @@
             <a  class="paragraph" href="#home">Bosh sahifa</a>
             <a href="tel:+998976051234" class="btn paragraph">Qo'ng'iroq qilish</a>
         </div>
-    </nav>
+    </nav> -->
     
     <section class="call" id="call">
-        <form class="form">
-            <input type="text" placeholder="Ismingiz">
-            <input type="tel" placeholder="Telefon">
-            <input type="email" placeholder="Email">
-            <input type="checkbox" name="subscription" id="">
-            <label for="subscription">Menga xabar jo'natilishiga roziman</label>
+        <div class="circle"></div>
+        <div class="rectangle"></div>
+        <div class="circle"></div>
+        <div class="rectangle"></div>
+        <div class="circle"></div>
+        <div class="rectangle"></div>
+        <div class="circle"></div>
+        <div class="rectangle"></div>
+        <form netlify>
+            <div class="bg"></div>
+            <div class="inputs">
+                <input placeholder="ism" type="text" id="name" name="ism" required>
+                <input placeholder="familya" type="familya" id="surname" name="familya" required>
+                <input placeholder="telefon" type="tel" id="tel" name="telefon" required>
+                <input placeholder="elektron pochta" type="email" id="email" name="elektron pochta">
+                <textarea name="xabar" id="text"></textarea>
+            </div>
+    
         </form>
     </section>
 </body>
 <script src="/js/script.js"></script>
-<!--Git Hub ni o'rgandik-->
 </html>

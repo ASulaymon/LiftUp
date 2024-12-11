@@ -22,11 +22,6 @@ $transition-fast: 0.2s;
 $transition: 0.3s;
 $transition-slow: 1s;
 
-::selection{
-    background: $main;
-    color: $white;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -37,108 +32,107 @@ $transition-slow: 1s;
     box-sizing: border-box;
 }
 
+::selection{
+    background: $main;
+    color: $text-white;
+}
+
 body{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-size: cover;
+    color: $text-white;
+    font-family: $font-body;
+    overflow: hidden;
 
-    .heading{
-        font-family: $font-heading;
-    }
-    .paragraph{
-        font-family:  $font-body;
-        color: $dark;
-    }
-
-    nav{
-        position: fixed;
-        width: 100%;
-        height: 60px;
-        top: 0;
-        left: 0;
-        color: $text-normal;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 999999;
-        transition: $transition-slow;
-
-        &.active{
-            background-color: $main;
-            color: $white;
-
-            a{
-                color: $white;
-                &:hover{
-                    background: $white;
-                }
-                &.logo{
-                    background: transparent;
-                }
-            }
-
-            .logo{
-                color: $white;
-            }
-        }
-
-        .logo{
-            width: 200px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: $main;
-            gap: 10px;
-
-            img{
-                width: 50px;
-            }
-        }
-
-        .links{
-            width: 70%;
-            display: flex;
-            justify-content: space-around;
-        }
+    .circle{
+        background: $third;
+        position: absolute;
+        z-index: -1;
+        border-radius: 50%;
+        position: absolute;
         
-        a{
-            color: $text-normal;
-            width: 125px;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: $transition;
-
-            &:hover{
-                color: $main;
-            }
-
-            &.btn{
-                background: $main;
-                color: $white;
-            }
+        &:nth-child(1){
+            width: 400px;
+            height: 400px;
+            left: 100px;
+            bottom: -50px;
+        }
+        &:nth-child(3){
+            width: 300px;
+            height: 300px;
+            right: 200px;
+            top: -50px;
+        }
+        &:nth-child(5){
+            width: 200px;
+            height: 200px;
+            right: 400px;
+            bottom: 50px;
         }
     }
+
     .call{
         width: 100%;
-        height: 100lvh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
         form{
+            position: relative;
             width: 70%;
+            height: 80%;
+            background: transparent;
+            border: 2px solid $gray;
+            border-radius: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex: 0 1;
+            transition: $transition;
+            flex-wrap: wrap;
+            gap: 30px;
+    
+            .bg{
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                filter: blur(20px);
+                position: absolute;
+                box-shadow: 0 0 10px rgba(0,0,0,.2);
+                border-radius: 50px;
+            }
+    
+            .inputs{
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: $transition;
+                flex-wrap: wrap;
+                flex-shrink: 1;
+                input{
+                    width: 1fr;
+                    height: 40px;
+                    border: none;
+                    outline: none;
+                    border-bottom: $main 2px solid;
+                    background-color: transparent !important;
+                    z-index: 3;
+                    font-size: 20px;
+                    padding-left: 10px;
+                    transition: 1000000s;
+                    color: $text-normal;
+        
+                    &#email{
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
