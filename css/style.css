@@ -199,7 +199,7 @@ body header .slider .slide_images .elevator .doors {
 body header .slider .slide_images .elevator .doors .door {
   position: relative;
   width: 0px;
-  height: 435px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   bottom: 0;
