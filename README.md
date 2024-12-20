@@ -6,7 +6,7 @@
 ---
 
 ## Repozitoriya Haqida  
-Ushbu repozitoriya **LiftUp kompaniyasining rasmiy veb-sayti** uchun ishlab chiqilgan kodlarni o‘z ichiga oladi. Veb-sayt kompaniyaning mahsulotlari, xizmatlari va boshqa ma’lumotlarini taqdim etadi.
+Ushbu repozitoriya **LiftUp nomli demo kompaniyaning veb-sayti** uchun ishlab chiqilgan kodlarni o‘z ichiga oladi. Veb-sayt kompaniyaning mahsulotlari, xizmatlari va boshqa ma’lumotlarini taqdim etadi.
 
 ---
 
