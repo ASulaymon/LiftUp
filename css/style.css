@@ -207,14 +207,12 @@ body header .slider .slide_images .elevator .doors .door {
   transition: 1s;
 }
 body header .slider .slide_images .elevator .doors .door1 {
-  right: 65px;
   -o-object-position: right;
      object-position: right;
   position: absolute;
   right: 0;
 }
 body header .slider .slide_images .elevator .doors .door2 {
-  left: 775px;
   -o-object-position: left;
      object-position: left;
   left: 0;

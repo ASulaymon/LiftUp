@@ -231,13 +231,11 @@ body{
                             z-index: -1;
                             transition: $transition-slow;
                             &1{
-                                right: 65px;
                                 object-position: right;
                                 position: absolute;
                                 right: 0;
                             }
                             &2{
-                                left: 775px;
                                 object-position: left;
                                 left: 0;
                             }
