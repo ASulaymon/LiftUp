@@ -187,26 +187,7 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                .door{
-                    position: absolute;
-                    width: 0px;
-                    height: 435px;
-                    object-fit: cover;
-                    bottom: 0;
-                    z-index: -1;
-                    transition: $transition-slow;
-                    &1{
-                        right: 65px;
-                        object-position: right;
-                    }
-                    &2{
-                        left: 775px;
-                        object-position: left;
-                    }
-                    &.active{
-                        width: 222.5px;
-                    }
-                }
+
                 .btns{
                     width: 50px;
                     height: 50px;
@@ -236,6 +217,35 @@ body{
                     transform: translate(90px);
                     bottom: 0;
                     z-index: -2;
+                    .doors{
+                        position: relative;
+                        width: inherit;
+                        height: inherit;
+
+                        .door{
+                            position: relative;
+                            width: 0px;
+                            height: 435px;
+                            object-fit: cover;
+                            bottom: 0;
+                            z-index: -1;
+                            transition: $transition-slow;
+                            &1{
+                                right: 65px;
+                                object-position: right;
+                                position: absolute;
+                                right: 0;
+                            }
+                            &2{
+                                left: 775px;
+                                object-position: left;
+                                left: 0;
+                            }
+                            &.active{
+                                width: 222.5px;
+                            }
+                        }
+                    }
                 }
                 .elevator_frame{
                     position: absolute;

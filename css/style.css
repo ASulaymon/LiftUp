@@ -160,29 +160,6 @@ body header .slider .slide_images {
   justify-content: center;
   align-items: center;
 }
-body header .slider .slide_images .door {
-  position: absolute;
-  width: 0px;
-  height: 435px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  bottom: 0;
-  z-index: -1;
-  transition: 1s;
-}
-body header .slider .slide_images .door1 {
-  right: 65px;
-  -o-object-position: right;
-     object-position: right;
-}
-body header .slider .slide_images .door2 {
-  left: 775px;
-  -o-object-position: left;
-     object-position: left;
-}
-body header .slider .slide_images .door.active {
-  width: 222.5px;
-}
 body header .slider .slide_images .btns {
   width: 50px;
   height: 50px;
@@ -213,6 +190,37 @@ body header .slider .slide_images .elevator {
   transform: translate(90px);
   bottom: 0;
   z-index: -2;
+}
+body header .slider .slide_images .elevator .doors {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+body header .slider .slide_images .elevator .doors .door {
+  position: relative;
+  width: 0px;
+  height: 435px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+  z-index: -1;
+  transition: 1s;
+}
+body header .slider .slide_images .elevator .doors .door1 {
+  right: 65px;
+  -o-object-position: right;
+     object-position: right;
+  position: absolute;
+  right: 0;
+}
+body header .slider .slide_images .elevator .doors .door2 {
+  left: 775px;
+  -o-object-position: left;
+     object-position: left;
+  left: 0;
+}
+body header .slider .slide_images .elevator .doors .door.active {
+  width: 222.5px;
 }
 body header .slider .slide_images .elevator_frame {
   position: absolute;
